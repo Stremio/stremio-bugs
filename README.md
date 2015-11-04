@@ -1,6 +1,6 @@
 # stremio-bugs
 
-Report stremio-related bugs here.
+Report bugs related to the Stremio desktop app here.
 
 Do NOT report any bugs in add-ons unless it's related to one of the official add-ons:
 cinemeta (catalogue / metadata)
