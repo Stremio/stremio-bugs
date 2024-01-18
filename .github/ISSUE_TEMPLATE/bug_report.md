@@ -34,5 +34,10 @@ If applicable, add screenshots to help explain your problem.
  - Browser [e.g. stock browser, safari]
  - Version [e.g. 22]
 
+**TV (please complete the following information):**
+ - Device: [e.g. Mi Box S 4K, Samsung 50Q64B]
+ - OS: [e.g. Android TV, Tizen (Samsung)]
+ - Version [e.g. 2.0.0]
+
 **Additional context**
 Add any other context about the problem here.
