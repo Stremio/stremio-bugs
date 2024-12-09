@@ -1,0 +1,100 @@
+name: Bug report
+description: Report a bug
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Stremio Platform"
+      description: "Select the Stremio Platform you are using"
+      options:
+        - Desktop App (Windows)
+        - Desktop App (macOS)
+        - Desktop App (Linux)
+        - Web App
+        - Android Mobile App
+        - Android TV App
+        - Samsung Native TV App
+        - LG Native TV App
+        - Sony TV Android App
+        - Philips TV Android App
+        - Meta Quest VR App
+        - Raspberry Pi App v4 (RPI4)
+        - Raspberry Pi App v5 (RPI5)
+        - Steam Deck App
+    validations:
+      required: true
+
+  - type: textarea
+    id: describe_bug
+    attributes:
+      label: "Describe the bug"
+      description: "A clear and concise description of what the bug is."
+      placeholder: "Describe the issue in detail..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: to_reproduce
+    attributes:
+      label: "To Reproduce"
+      description: "Steps to reproduce the behavior."
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: "Expected behavior"
+      description: "A clear and concise description of what you expected to happen."
+      placeholder: "Explain what you expected to see instead..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots"
+      description: "If applicable, add screenshots to help explain your problem."
+      placeholder: "Provide URLs or drag-and-drop images after creating the issue."
+
+  - type: textarea
+    id: desktop_info
+    attributes:
+      label: "Desktop (if applicable)"
+      description: "If you're using a desktop platform, complete the following info: OS, Browser, Version."
+      placeholder: "OS: e.g. Windows 10\nBrowser: e.g. Chrome\nVersion: e.g. 1.0.0"
+
+  - type: textarea
+    id: smartphone_info
+    attributes:
+      label: "Smartphone (if applicable)"
+      description: "If you're using a smartphone, complete the following info: Device, OS, Browser, Version."
+      placeholder: "Device: e.g. iPhone 6\nOS: e.g. iOS 14.4\nBrowser: e.g. Safari\nVersion: e.g. 1.0.0"
+
+  - type: textarea
+    id: tv_info
+    attributes:
+      label: "TV (if applicable)"
+      description: "If you're using a TV platform, complete the following info: Device, OS, Version."
+      placeholder: "Device: e.g. Samsung 50Q64B\nOS: e.g. Tizen\nVersion: e.g. 2.0.0"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: "Paste any relevant logs here (optional)"
+      render: shell
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes"
+      description: "Any additional information (optional)"
