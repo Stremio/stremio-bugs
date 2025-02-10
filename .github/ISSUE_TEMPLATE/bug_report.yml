@@ -15,6 +15,7 @@ body:
         - Desktop App (Linux)
         - Web App
         - Android Mobile App
+        - Android Mobile Beta App
         - Android TV App
         - Samsung Native TV App
         - LG Native TV App
@@ -24,6 +25,7 @@ body:
         - Raspberry Pi App v4 (RPI4)
         - Raspberry Pi App v5 (RPI5)
         - Steam Deck App
+        - iOS / iPadOS / macOS Native Beta App
     validations:
       required: true
 
