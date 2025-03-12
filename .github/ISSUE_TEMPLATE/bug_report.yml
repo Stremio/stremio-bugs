@@ -7,22 +7,22 @@ body:
       label: "Stremio Platform"
       description: "Select the Stremio Platform you are using"
       options:
-        - Desktop App (Windows)
-        - Desktop App (macOS)
-        - Desktop App (Linux)
-        - Web App
-        - Android Mobile App
-        - Android Mobile Beta App
-        - Android TV App
-        - Samsung Native TV App
-        - LG Native TV App
-        - Sony TV Android App
-        - Philips TV Android App
-        - Meta Quest VR App
-        - Raspberry Pi App v4 (RPI4)
-        - Raspberry Pi App v5 (RPI5)
-        - Steam Deck App
-        - iOS / iPadOS / macOS Native Beta App
+        - Desktop (Windows)
+        - Desktop (macOS)
+        - Desktop (Linux)
+        - Web
+        - Android Mobile
+        - Android Mobile Beta
+        - Android TV
+        - Samsung Native TV
+        - LG Native TV
+        - Sony TV Android
+        - Philips TV Android
+        - Meta Quest VR
+        - Raspberry Pi v4 (RPI4)
+        - Raspberry Pi v5 (RPI5)
+        - Steam Deck
+        - iOS / iPadOS / macOS Native Beta
     validations:
       required: true
 
