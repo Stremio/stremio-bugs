@@ -7,9 +7,11 @@ body:
       label: "Stremio Platform"
       description: "Select the Stremio Platform you are using"
       options:
-        - Desktop (Windows)
-        - Desktop (macOS)
-        - Desktop (Linux)
+        - Windows Desktop
+        - Windows Desktop (Beta)
+        - macOS Desktop
+        - Linux Desktop
+        - Linux Desktop (Beta)
         - Web
         - Android Mobile
         - Android Mobile Beta
