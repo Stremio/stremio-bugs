@@ -25,6 +25,7 @@ body:
         - Raspberry Pi v5 (RPI5)
         - Steam Deck
         - iOS / iPadOS / macOS Native Beta
+        - tvOS Beta
     validations:
       required: true
 
