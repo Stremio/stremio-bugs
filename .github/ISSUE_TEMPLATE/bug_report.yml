@@ -67,26 +67,39 @@ body:
       description: "If applicable, add screenshots to help explain your problem."
       placeholder: "Provide URLs or drag-and-drop images after creating the issue."
 
-  - type: textarea
-    id: desktop_info
+  - type: input
+    id: app_version
     attributes:
-      label: "Desktop (if applicable)"
-      description: "If you're using a desktop platform, complete the following info: OS, Browser, Version."
-      placeholder: "OS: e.g. Windows 10\nBrowser: e.g. Chrome\nVersion: e.g. 1.0.0"
+      label: "App Version"
+      description: "Open the app settings to find it or you OS app manager"
+      placeholder: v0.0.0
+    validations:
+      required: true
 
-  - type: textarea
-    id: smartphone_info
+  - type: input
+    id: device_info
     attributes:
-      label: "Smartphone (if applicable)"
-      description: "If you're using a smartphone, complete the following info: Device, OS, Browser, Version."
-      placeholder: "Device: e.g. iPhone 6\nOS: e.g. iOS 14.4\nBrowser: e.g. Safari\nVersion: e.g. 1.0.0"
+      label: "Device Info"
+      description: "Open the OS settings app to find which model you have"
+      placeholder: iPhone 6, Pixel 8, Desktop, ...
+    validations:
+      required: true
 
-  - type: textarea
-    id: tv_info
+  - type: input
+    id: os_version
     attributes:
-      label: "TV (if applicable)"
-      description: "If you're using a TV platform, complete the following info: Device, OS, Version."
-      placeholder: "Device: e.g. Samsung 50Q64B\nOS: e.g. Tizen\nVersion: e.g. 2.0.0"
+      label: "OS Version"
+      description: "Open the OS settings app to find it or in some case displayed in the app settings"
+      placeholder: Windows 10, iOS 14.4, Tizen 5.0, ...
+    validations:
+      required: true
+
+  - type: input
+    id: browser_info
+    attributes:
+      label: "Browser Info"
+      description: "Open the about section of your browser to find the version"
+      placeholder: Chrome 142, Firefox 145, ...
 
   - type: textarea
     id: logs
