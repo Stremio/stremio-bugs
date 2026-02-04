@@ -1,0 +1,24 @@
+name: Auto Label
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  label-issue:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Label issue
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const script = require('./.github/scripts/auto-label.js');
+            await script({github, context});
