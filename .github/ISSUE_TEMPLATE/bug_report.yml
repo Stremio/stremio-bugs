@@ -95,6 +95,13 @@ body:
       required: true
 
   - type: input
+    id: player_info
+    attributes:
+      label: "Player Info"
+      description: "Internal player used (if applicable)"
+      placeholder: Exo, VLC, ...
+
+  - type: input
     id: browser_info
     attributes:
       label: "Browser Info"
