@@ -21,13 +21,15 @@ const LABELS_MAP = [
 
 module.exports = async ({ github, context }) => {
     const { owner, repo } = context.repo;
-    const { body, number: issue_number } = context.payload.issue;
+    const { body, number: issue_number, labels } = context.payload.issue;
+
+    const oldLabels = labels.map(({ name }) => name);
     
-    const labels = LABELS_MAP
+    const newLabels = LABELS_MAP
         .filter(({ pattern }) => RegExp(pattern, 'i').test(body))
         .map(({ label }) => label);
 
-    if (labels.length > 0) {
+    if (JSON.stringify(oldLabels) !== JSON.stringify(newLabels)) {
         await github.rest.issues.removeAllLabels({
             owner,
             repo,
@@ -38,7 +40,7 @@ module.exports = async ({ github, context }) => {
             owner,
             repo,
             issue_number,
-            labels,
+            labels: newLabels,
         });
     }
 };
