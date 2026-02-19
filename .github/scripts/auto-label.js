@@ -17,6 +17,10 @@ const LABELS_MAP = [
         pattern: `${PLATFORM_REGEX}tvOS`,
         label: 'apple-tv',
     },
+    {
+        pattern: `${PLATFORM_REGEX}macOS`,
+        label: 'apple-mac',
+    },
 ];
 
 module.exports = async ({ github, context }) => {
