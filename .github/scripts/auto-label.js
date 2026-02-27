@@ -21,6 +21,10 @@ const LABELS_MAP = [
         pattern: `${PLATFORM_REGEX}macOS`,
         label: 'apple-mac',
     },
+    {
+        pattern: `${PLATFORM_REGEX}Web`,
+        label: 'web',
+    },
 ];
 
 module.exports = async ({ github, context }) => {
