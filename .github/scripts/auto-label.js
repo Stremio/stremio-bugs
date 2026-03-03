@@ -28,6 +28,18 @@ const LABELS_MAP = [
         label: 'web',
     },
     {
+        pattern: variant('Tizen'),
+        label: 'smart-tv',
+    },
+    {
+        pattern: variant('webOS'),
+        label: 'smart-tv',
+    },
+    {
+        pattern: variant('VIDAA'),
+        label: 'smart-tv',
+    },
+    {
         pattern: variant('Beta'),
         label: 'beta',
     },
