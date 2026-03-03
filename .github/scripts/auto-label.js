@@ -50,11 +50,13 @@ module.exports = async ({ github, context }) => {
             issue_number,
         });
 
-        await github.rest.issues.addLabels({
-            owner,
-            repo,
-            issue_number,
-            labels: newLabels,
-        });
+        if (newLabels.length > 0) {
+            await github.rest.issues.addLabels({
+                owner,
+                repo,
+                issue_number,
+                labels: newLabels,
+            });
+        }
     }
 };
