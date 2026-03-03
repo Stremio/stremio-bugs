@@ -1,29 +1,35 @@
-const PLATFORM_REGEX = '###.+Platform\\s+';
+const platform = (value) => `###.+Platform\\s+${value}\\s+###`;
+const name = (name) => platform(`${name}.*`);
+const variant = (suffix) => platform(`.+${suffix}`);
 
 const LABELS_MAP = [
     {
-        pattern: `${PLATFORM_REGEX}Android TV`,
+        pattern: name('Android TV'),
         label: 'android-tv',
     },
     {
-        pattern: `${PLATFORM_REGEX}Android Mobile`,
+        pattern: name('Android Mobile'),
         label: 'android-mobile',
     },
     {
-        pattern: `${PLATFORM_REGEX}iOS`,
+        pattern: name('iOS'),
         label: 'apple-ios',
     },
     {
-        pattern: `${PLATFORM_REGEX}tvOS`,
+        pattern: name('tvOS'),
         label: 'apple-tv',
     },
     {
-        pattern: `${PLATFORM_REGEX}macOS`,
+        pattern: name('macOS'),
         label: 'apple-mac',
     },
     {
-        pattern: `${PLATFORM_REGEX}Web`,
+        pattern: name('web'),
         label: 'web',
+    },
+    {
+        pattern: variant('Beta'),
+        label: 'beta',
     },
 ];
 
