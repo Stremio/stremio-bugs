@@ -40,6 +40,10 @@ const LABELS_MAP = [
         label: 'smart-tv',
     },
     {
+        pattern: variant('VR'),
+        label: 'vr',
+    },
+    {
         pattern: variant('Beta'),
         label: 'beta',
     },
