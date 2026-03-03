@@ -28,15 +28,15 @@ const LABELS_MAP = [
         label: 'web',
     },
     {
-        pattern: variant('Tizen'),
+        pattern: name('Samsung Native TV'),
         label: 'smart-tv',
     },
     {
-        pattern: variant('webOS'),
+        pattern: name('LG Native TV'),
         label: 'smart-tv',
     },
     {
-        pattern: variant('VIDAA'),
+        pattern: name('Hisense Native TV'),
         label: 'smart-tv',
     },
     {
