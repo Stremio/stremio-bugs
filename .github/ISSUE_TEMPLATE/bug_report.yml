@@ -36,8 +36,8 @@ body:
       label: "Have you tried play this video in external player"
       description: "When reporting an issue with video playback, you should first verify if this video plays correctly and without any issues in an external player available on"
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
     validations:
       required: true
   - type: textarea
