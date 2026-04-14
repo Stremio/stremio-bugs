@@ -28,6 +28,10 @@ const LABELS_MAP = [
         label: 'web',
     },
     {
+        pattern: name('Windows'),
+        label: 'windows',
+    },
+    {
         pattern: name('Samsung Native TV'),
         label: 'smart-tv',
     },
