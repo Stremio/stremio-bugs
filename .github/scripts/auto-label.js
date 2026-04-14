@@ -32,15 +32,15 @@ const LABELS_MAP = [
         label: 'windows',
     },
     {
-        pattern: name('Samsung Native TV'),
+        pattern: name('Samsung TV'),
         label: 'smart-tv',
     },
     {
-        pattern: name('LG Native TV'),
+        pattern: name('LG TV'),
         label: 'smart-tv',
     },
     {
-        pattern: name('Hisense Native TV'),
+        pattern: name('Hisense TV'),
         label: 'smart-tv',
     },
     {

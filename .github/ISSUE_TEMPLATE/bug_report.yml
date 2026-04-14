@@ -17,9 +17,9 @@ body:
         - Android Mobile Beta
         - Android TV
         - Android TV Beta
-        - Samsung Native TV (Tizen)
-        - LG Native TV (webOS)
-        - Hisense Native TV (VIDAA)
+        - Samsung TV (Tizen)
+        - LG TV (webOS)
+        - Hisense TV (VIDAA)
         - Meta Quest VR
         - Pico VR
         - Raspberry Pi v4 (RPI4)
