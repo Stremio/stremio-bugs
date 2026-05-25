@@ -44,6 +44,10 @@ const LABELS_MAP = [
         label: 'smart-tv',
     },
     {
+        pattern: name('Philips TV'),
+        label: 'smart-tv',
+    },
+    {
         pattern: variant('VR'),
         label: 'vr',
     },
