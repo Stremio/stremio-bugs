@@ -32,6 +32,10 @@ const LABELS_MAP = [
         label: 'windows',
     },
     {
+        pattern: name('Linux'),
+        label: 'linux',
+    },
+    {
         pattern: name('Samsung TV'),
         label: 'smart-tv',
     },
