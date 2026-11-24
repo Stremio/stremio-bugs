@@ -26,7 +26,7 @@ body:
         - Raspberry Pi v4 (RPI4)
         - Raspberry Pi v5 (RPI5)
         - Steam Deck
-        - iOS / iPadOS / macOS Native Beta
+        - iOS / iPadOS / macOS Native
         - tvOS Beta
     validations:
       required: true
