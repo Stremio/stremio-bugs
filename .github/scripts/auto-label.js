@@ -55,10 +55,6 @@ const LABELS_MAP = [
         pattern: variant('VR'),
         label: 'vr',
     },
-    {
-        pattern: variant('Beta'),
-        label: 'beta',
-    },
 ];
 
 module.exports = async ({ github, context }) => {
